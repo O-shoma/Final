@@ -23,6 +23,9 @@
 		658C00CF247B99DD004E8F7A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C00CE247B99DD004E8F7A /* CreateAccountViewController.swift */; };
 		658C00D1247B99E6004E8F7A /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C00D0247B99E6004E8F7A /* ImageSelectViewController.swift */; };
 		658C00D3247B99ED004E8F7A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C00D2247B99ED004E8F7A /* SettingViewController.swift */; };
+		658C00D5247B9B73004E8F7A /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658C00D4247B9B73004E8F7A /* Camera.storyboard */; };
+		658C00D7247B9BC1004E8F7A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C00D6247B9BC1004E8F7A /* CameraViewController.swift */; };
+		658C00D9247B9EE6004E8F7A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C00D8247B9EE6004E8F7A /* TabBarController.swift */; };
 		DD5CD07903F3E17B5201386B /* Pods_Final.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E781F0CF11948667223020B8 /* Pods_Final.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		658C00CE247B99DD004E8F7A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		658C00D0247B99E6004E8F7A /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		658C00D2247B99ED004E8F7A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		658C00D4247B9B73004E8F7A /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		658C00D6247B9BC1004E8F7A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		658C00D8247B9EE6004E8F7A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		709B82A10527901FF4D6516B /* Pods-Final.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final.debug.xcconfig"; path = "Target Support Files/Pods-Final/Pods-Final.debug.xcconfig"; sourceTree = "<group>"; };
 		E781F0CF11948667223020B8 /* Pods_Final.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +113,8 @@
 				658C00CE247B99DD004E8F7A /* CreateAccountViewController.swift */,
 				658C00D0247B99E6004E8F7A /* ImageSelectViewController.swift */,
 				658C00D2247B99ED004E8F7A /* SettingViewController.swift */,
+				658C00D6247B9BC1004E8F7A /* CameraViewController.swift */,
+				658C00D8247B9EE6004E8F7A /* TabBarController.swift */,
 				6547EAC3247B91A80065642E /* Storyboard */,
 				6547EAB7247B91550065642E /* Assets.xcassets */,
 				6547EAC4247B96760065642E /* GoogleService-Info.plist */,
@@ -121,6 +129,7 @@
 				6547EAB4247B91540065642E /* Main.storyboard */,
 				6547EAC6247B97E40065642E /* CreateAccount.storyboard */,
 				6547EAC8247B97F80065642E /* Home.storyboard */,
+				658C00D4247B9B73004E8F7A /* Camera.storyboard */,
 				6547EACA247B98010065642E /* ImageSelect.storyboard */,
 				6547EACC247B98090065642E /* Login.storyboard */,
 				6547EACE247B98120065642E /* Setting.storyboard */,
@@ -198,6 +207,7 @@
 				6547EAC9247B97F80065642E /* Home.storyboard in Resources */,
 				6547EAC7247B97E40065642E /* CreateAccount.storyboard in Resources */,
 				6547EAB6247B91540065642E /* Main.storyboard in Resources */,
+				658C00D5247B9B73004E8F7A /* Camera.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +263,10 @@
 				658C00D1247B99E6004E8F7A /* ImageSelectViewController.swift in Sources */,
 				658C00CF247B99DD004E8F7A /* CreateAccountViewController.swift in Sources */,
 				658C00D3247B99ED004E8F7A /* SettingViewController.swift in Sources */,
+				658C00D9247B9EE6004E8F7A /* TabBarController.swift in Sources */,
 				6547EAAF247B91540065642E /* AppDelegate.swift in Sources */,
 				6547EAB1247B91540065642E /* SceneDelegate.swift in Sources */,
+				658C00D7247B9BC1004E8F7A /* CameraViewController.swift in Sources */,
 				658C00CD247B99D5004E8F7A /* LoginViewController.swift in Sources */,
 				658C00CB247B99CE004E8F7A /* HomeViewController.swift in Sources */,
 			);
