@@ -10,21 +10,44 @@
         <!--Camera View Controller-->
         <scene sceneID="odI-pz-5jq">
             <objects>
-                <viewController storyboardIdentifier="Camera" useStoryboardIdentifierAsRestorationIdentifier="YES" id="icO-ad-Ook" customClass="CameraViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Camera" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="icO-ad-Ook" customClass="CameraViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IBs-hS-vN2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHw-7P-jHe">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aKO-8z-cQN" appends="YES" id="Bdw-h7-oh2"/>
+                                </connections>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svh-3Y-88p">
+                                <rect key="frame" x="295" y="64" width="99" height="34"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SelectPhoto"/>
+                                <connections>
+                                    <action selector="selectPhotoButton:" destination="icO-ad-Ook" eventType="touchUpInside" id="1V5-3z-kpp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-2M-duK">
+                                <rect key="frame" x="20" y="64" width="88" height="30"/>
+                                <state key="normal" title="◀︎ Back Page"/>
+                                <connections>
+                                    <action selector="backToPage:" destination="icO-ad-Ook" eventType="touchUpInside" id="q42-Tz-ToU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="MT2-Xb-9sk" firstAttribute="bottom" secondItem="wHw-7P-jHe" secondAttribute="bottom" id="9Pu-03-qNW"/>
                             <constraint firstItem="wHw-7P-jHe" firstAttribute="top" secondItem="MT2-Xb-9sk" secondAttribute="top" id="Ma4-4n-T2E"/>
                             <constraint firstItem="MT2-Xb-9sk" firstAttribute="trailing" secondItem="wHw-7P-jHe" secondAttribute="trailing" id="UMz-bX-gBn"/>
+                            <constraint firstItem="gSm-2M-duK" firstAttribute="top" secondItem="MT2-Xb-9sk" secondAttribute="top" constant="20" id="cvD-GD-hW3"/>
+                            <constraint firstItem="gSm-2M-duK" firstAttribute="leading" secondItem="MT2-Xb-9sk" secondAttribute="leading" constant="20" id="dyd-OV-sxT"/>
                             <constraint firstItem="wHw-7P-jHe" firstAttribute="leading" secondItem="MT2-Xb-9sk" secondAttribute="leading" id="l1z-SP-g79"/>
+                            <constraint firstItem="MT2-Xb-9sk" firstAttribute="trailing" secondItem="Svh-3Y-88p" secondAttribute="trailing" constant="20" id="wW3-2K-B2T"/>
+                            <constraint firstItem="Svh-3Y-88p" firstAttribute="top" secondItem="MT2-Xb-9sk" secondAttribute="top" constant="20" id="wzL-OT-VuX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MT2-Xb-9sk"/>
                     </view>
@@ -33,6 +56,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLx-H7-efZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="aKO-8z-cQN">
+                    <connections>
+                        <action selector="pinchGesture:" destination="icO-ad-Ook" id="QjV-8f-IU1"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="83" y="83"/>
         </scene>

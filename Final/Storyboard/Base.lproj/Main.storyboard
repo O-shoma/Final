@@ -10,7 +10,7 @@
         <scene sceneID="UDz-33-NOe">
             <objects>
                 <viewControllerPlaceholder storyboardName="ImageSelect" id="P4c-Bj-rVe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="画像選択" image="plus" catalog="system" id="kwQ-Ky-hro"/>
+                    <tabBarItem key="tabBarItem" title="ImageSelect" id="kwQ-Ky-hro"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXF-zM-03Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -20,7 +20,7 @@
         <scene sceneID="bse-Hk-bbY">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="Kty-xE-rbL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ホーム" image="house" catalog="system" id="8Rq-w8-KQS"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="8Rq-w8-KQS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLX-ph-7KK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,7 +30,7 @@
         <scene sceneID="F9H-jx-pDl">
             <objects>
                 <viewControllerPlaceholder storyboardName="Setting" id="Xx1-gG-qwy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="設定" image="gear" catalog="system" id="Yz3-wm-Zdu"/>
+                    <tabBarItem key="tabBarItem" title="Setting" id="Yz3-wm-Zdu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bld-bz-h2C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,7 +40,7 @@
         <scene sceneID="kxx-IM-ayz">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="Camera" storyboardName="Camera" id="fzZ-7u-pwz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="カメラ" image="camera" catalog="system" id="54h-MH-LOT"/>
+                    <tabBarItem key="tabBarItem" title="Camera" id="54h-MH-LOT"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akG-aF-Oeg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,10 +57,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="P4c-Bj-rVe" kind="relationship" relationship="viewControllers" id="eCJ-yV-Mhh"/>
-                        <segue destination="Kty-xE-rbL" kind="relationship" relationship="viewControllers" id="EQL-FW-6sj"/>
+                        <segue destination="Kty-xE-rbL" kind="relationship" relationship="viewControllers" id="Dli-oi-qbP"/>
                         <segue destination="fzZ-7u-pwz" kind="relationship" relationship="viewControllers" id="iot-bw-HpZ"/>
-                        <segue destination="Xx1-gG-qwy" kind="relationship" relationship="viewControllers" id="qsQ-tf-ksO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLd-jd-QGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -68,10 +66,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="camera" catalog="system" width="128" height="96"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="house" catalog="system" width="128" height="110"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
-    </resources>
 </document>

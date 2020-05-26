@@ -44,15 +44,16 @@ extension TabBarController: UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController is CameraViewController {
-            //CameraViewControllerは、タブ切り替えではなくモーダル遷移
+            //CameraViewControllerは、タブ切り替え時にタブバーを隠す
             if let cameraViewController = storyboard?.instantiateViewController(withIdentifier: "Camera") {
+                //cameraViewController.modalPresentationStyle = .overFullScreen
                 present(cameraViewController, animated: true)
                 
                 return false
             }
         }
-        
         //その他のViewControllerは通常のタブ切り替え
         return true
     }
 }
+
